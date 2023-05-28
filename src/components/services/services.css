@@ -1,0 +1,62 @@
+.services{
+    background-color: #f5ebe9;
+}
+
+.services__content{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    column-gap: 64px;
+}
+
+.services__card{
+    background-color: #FFFFFF;
+    padding: 50px 28px 60px;
+    border-radius: 12px;
+    text-align: center;
+    transition: .3s;
+}
+
+.services__card:hover{
+    box-shadow: 10px 10px 0px 0px #FF795C;
+    -webkit-box-shadow: 10px 10px 0px 0px #FF795C;
+    -moz-box-shadow: 10px 10px 0px 0px #FF795C;
+}
+
+.services__img{
+    height: 60px;
+}
+
+.services__title{
+    font-size: 1.50;
+    font-weight: 600;
+    margin: 2.36em 0 0.72em;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .services__content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+}
+    
+@media screen and (max-width: 576px) {
+    .services__content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section__title{
+        font-size: 1.5rem;
+    }
+}
+    
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .section__title{
+        font-size: 1.2rem;
+    }
+}

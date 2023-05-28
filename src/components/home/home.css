@@ -1,0 +1,98 @@
+.home__content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding-bottom: 100px;
+    height: 100vh;
+}
+
+.home__title{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.home__title span{
+    color: #FC7B5E;
+}
+
+.home__description{
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.home__scroll{
+    position: absolute;
+    top: 94%;
+    left: 45%;
+}
+
+.home__scroll-name{
+    color: hsl(var(--hue), var(--sat), 20%);
+    font-weight: 500;
+    margin-right: 0.25rem;
+    margin-left: 2px;
+}
+
+.home__scroll-arrow{
+    font-size: 1.25rem;
+    color: hsl(var(--hue), var(--sat), 20%);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .home__content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .home__title{
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+
+    .home__scroll{
+        display: none;
+    }
+    
+  
+}
+    
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  
+    .home__title{
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    
+    .home__description{
+        font-size: 1rem;
+    }
+}
+    
+@media screen and (max-width: 576px) {
+    .home__title{
+        font-size: 1.9rem;
+        margin-bottom: 20px;
+    }
+    
+    .home__description{
+        font-size: 0.758rem;
+    }
+}
+    
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .home__title{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .home__description{
+        font-size: 0.658rem;
+    }
+}
